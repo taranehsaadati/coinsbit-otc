@@ -1,0 +1,133 @@
+:root {
+  --c-p2p-background: #1f1f1f;
+  --c-card-background: #2e3750;
+  --c-card-bg: #222222;
+  --c-input-text: #818181;
+  --c-link: #4aa657;
+  --c-short-desc: #777;
+  --c-table-th: #bfbfbf;
+  --c-auth-text: undefined;
+  --c-auth-placeholder: undefined;
+  --c-auth-validation: undefined;
+  --c-main: #F5A623;
+  -c-accent: #c8313e;
+  --c-main-alt: #bc9865;
+  --c-red: #c8313e;
+  --c-green: #4aa657;
+  --c-main-text: #9c9c9c;
+  --c-main-trade-text: #9c9c9c;
+  --c-alt-text: #5c5a76;
+  --c-opposite-text: #fff;
+  --c-detail: #494949;
+  --c-main-bg: #292929;
+  --c-block-bg: #1a1a1a;
+  --c-opposite-bg: #323234;
+  --c-mobile-menu-bg: undefined;
+  --c-input-bg-auth: #2a2839;
+  --c-input-bg: #1a1a1a;
+  --c-input-border: #363636;
+  --c-tab: #292929;
+  --c-table-bg: #1a1a1a;
+  --c-table-border: #363636;
+  --c-btn-header-border: #424242;
+  --c-btn-header-grey: undefined;
+  --c-svg-disabled: undefined;
+  --c-welcome-gray: undefined;
+  --c-welcome-Slider-Desc: undefined;
+  --c-footerLinks: #9299b0;
+  --c-welcome-partners-bg: #f9f9f9;
+  --c-welcome-advanatages: #848CA1;
+  --c-welcome-table-border: #ebebeb;
+  --c-welcome-advantade-number: #f3f3f3;
+  --c-disabled: #878787;
+  --c-tab-disabled: #2d2d2d;
+  --c-trade-input: #2d2d2d;
+  --c-star-bg: #c6c6c6;
+  --c-trade-search-border: #363636;
+  --c-scroll: #fff;
+  --c-news-alt: undefined;
+  --c-market-tab: #292929;
+  --c-theme-01: #302E49;
+  --c-theme-02: #373456;
+  --c-theme-03: #413F63;
+  --c-theme-04: #4C4A69;
+  --c-theme-05: #605E7A;
+  --c-theme-06: #EDEDED;
+  --c-theme-07: #F4F4F4;
+  --c-theme-08: #FDFDFD; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-weight: 300; }
+
+.container {
+  display: grid;
+  grid-template-rows: 6rem repeat(9, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.header {
+  background-color: var(--c-detail);
+  grid-column: center-start / center-end; }
+
+.nav {
+  grid-column: full-start / full-end;
+  border: 1px solid var(--c-theme-08); }
+  .nav__main {
+    grid-column: full-start /col-end 5;
+    background-color: #490a28; }
+  .nav__user {
+    grid-column: col-start 6 / full-end;
+    background-color: #490a28; }
+
+.market {
+  grid-column: center-start /center-end;
+  background-color: var(--c-green); }
+
+.roadmap--1 {
+  grid-column: center-start /   center-end;
+  background-color: var(--c-main-text); }
+
+.roadmap--2 {
+  grid-column: center-start / full-end;
+  background-color: var(--c-alt-text); }
+
+.easy-start {
+  grid-column: center-start /center-end;
+  background-color: var(--c-input-bg-auth); }
+
+.advantages {
+  grid-column: center-start / center-end;
+  background-color: var(--c-green); }
+
+.story__downlode {
+  grid-column: center-start /col-end 4;
+  background-color: var(--c-main-alt); }
+
+.story__picture {
+  grid-column: col-start 5 / center-end;
+  background-color: var(--c-red); }
+
+.media {
+  grid-column: center-start / center-end;
+  background-color: var(--c-main); }
+  .media .story__downlode {
+    grid-column: center-start /col-end 4;
+    background-color: var(--c-main-alt); }
+  .media .story__picture {
+    grid-column: col-start 5 / center-end;
+    background-color: var(--c-red); }
+
+.footer {
+  grid-column: full-start / center-end;
+  background-color: var(--c-main-bg); }

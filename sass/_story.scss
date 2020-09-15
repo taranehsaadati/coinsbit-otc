@@ -1,0 +1,10 @@
+.story{
+    &__downlode{
+        grid-column:center-start /col-end 4;
+        background-color:var( --c-main-alt);
+    }
+    &__picture{
+        grid-column:col-start 5 / center-end ;
+        background-color:var( --c-red);
+    }
+}
